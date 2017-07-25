@@ -15,20 +15,27 @@ module.exports = {
     },
     //module.loaders 是最关键的一块配置。它告知 webpack 每一种文件都需要使用什么加载器来处理
     module:{
-        //加载器配置
+        //加载器配置  //所有的加载器都需要通过npm 来加载，例如：npm install --save-dev url-loader
         loaders:[
+            //.css 文件使用 style-loader 和 css-loader 来处理
             {test: /\.css$/,loader:'style-loader!css-loader'},
-            {test:/\.js$/,loader:'jsx-loade?harmony'},
+            //.js 文件使用 jsx-loader来编译处理
+            {test:/\.js$/,loader:'jsx-loader?harmony'},
+            //.scss 文件使用 style-loader,css-loader,sass-loader来编译处理 //-loader是可以不写的，多个loader之间用“!”连接起来
             {test:/\.scss/,loader:'style!css!sass?sourceMap'},
+            //图片文件使用url-loader来处理，小于8KB的直接转为base64
             {test:/\.(png|jpg)$/,loader:'url-loader?limit=8192'}
         ]
     },
     //其他解决方案配置
     resolve:{
+        //查找module的话从这里开始查找
         root: 'g://github/suntaogit', //绝对路径
+        //自动扩展文件后缀名，意味着我们require模块可以省略不写后缀名
         extensions:['','.js','.json','.scss'],
+        //模块别名定义，方便后续直接引用别名，无需多写长的地址
         alias:{
-            AppStore: 'js/stores/AppStores.js',
+            AppStore: 'js/stores/AppStores.js', //后续直接 require('AppStore')即可
             ActionType: 'js/actions/ActionType.js',
             AppAction: 'js/actions/AppAction.js'
         }
