@@ -16,3 +16,4 @@
 #3.前端文件夹是WebClient  
  --npm install react redux react-redux react-router --save 安装react全家桶
  --npm install webpack --save 打包工具
+ --npm install antd --save 蚂蚁金服前端组件
