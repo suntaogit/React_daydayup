@@ -4,6 +4,7 @@
   "description": "2017/07/25 1.搭建koa框架，   koa快速开始：https://github.com/ChenShenhai/koa2-note/blob/master/note/start/quick.md   基本实现这个功能：https://github.com/douglasvegas/fanpianAdmin",
   "main": "index.js",
   "scripts": {
+    "start": "",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
