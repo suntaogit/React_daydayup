@@ -7,5 +7,9 @@
   --npm install koa --save 安装koa2  
   --本示例node的版本必须在7.6以上(async/await)，当前node版本为8.1.2，如果报错listen EADDRINUSE :::3000，修改端口号即可  
     
-  基本实现这个功能：https://github.com/douglasvegas/fanpianAdmin  
+  基本实现这个功能：https://github.com/douglasvegas/fanpianAdmin    
+  
+#2.安装mysql模块  
+  --npm install mysql --save  
+  --node mysql 查看demo  
 
