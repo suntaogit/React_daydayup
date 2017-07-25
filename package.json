@@ -1,0 +1,14 @@
+{
+  "name": "react_redux_demo",
+  "version": "1.0.0",
+  "description": "2017/07/25 1.搭建koa框架，   koa快速开始：https://github.com/ChenShenhai/koa2-note/blob/master/note/start/quick.md   基本实现这个功能：https://github.com/douglasvegas/fanpianAdmin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.3.0"
+  }
+}
