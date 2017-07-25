@@ -13,3 +13,6 @@
   --npm install mysql --save  
   --node mysql 查看demo  
 
+#3.前端文件夹是WebClient  
+ --npm install react redux react-redux react-router --save 安装react全家桶
+ --npm install webpack --save 打包工具
