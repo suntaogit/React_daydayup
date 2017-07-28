@@ -45,3 +45,16 @@
 
   # webpack 参考这篇文章 https://github.com/ruanyf/webpack-demos#demo01-entry-file-source
  卡在webpack上 http://www.cnblogs.com/-walker/p/6056529.html
+
+2017/07/28  
+ #4.package.json 添加script  
+    "script":{  
+      "start": "webpack-dev-server --hot --inline --colors --content-base ./build",  
+      "build": "webpack --progress --colors"  
+    }  
+
+    npm install --save-dev webpack-dev-server - webpack官网出的一个小型express服务器，主要特性是支持热加载.  
+
+    http://www.jianshu.com/p/324fd1c124ad 从零开始搭建一个react项目  !!!!!!  
+
+    jsx-loader --需要安装，不然读不懂jsx  
